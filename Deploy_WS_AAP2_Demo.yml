@@ -1,6 +1,7 @@
 ---
 - name: Playbook to Fully Setup and Configure a Webserver
   hosts: "{{ inv_host_var }}"
+  gather_facts: "{{ variable_facts | default('true') }}"
   tasks:
     - name: Install Packages for Webserver
       ansible.builtin.yum:

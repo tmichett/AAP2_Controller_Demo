@@ -2,6 +2,7 @@
 - name: Playbook to Fully Setup and Configure a Webserver
   hosts: serverb
   become: true
+  gather_facts: "{{ variable_facts | default('true') }}"
   vars: 
     pkg_name:
       - vim

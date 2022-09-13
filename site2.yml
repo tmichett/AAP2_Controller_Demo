@@ -1,6 +1,7 @@
 ---
 - name: Playbook to Fully Setup and Configure a Webserver
   hosts: "{{ variable_host | default('serverb') }}"
+  gather_facts: "{{ variable_facts | default('true') }}"
   become: true
   vars: 
     pkg_name:
