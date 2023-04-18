@@ -6,7 +6,7 @@
 
     - name: Create Job Template
       ansible.controller.job_template:
-        name: "DO467 Deploy Web Demo Job Template"
+        name: "DEMO - Hello Job Template"
         description: "Demo Job from Project"
         organization: Red Hat Training
         project: DO467 Demo Project

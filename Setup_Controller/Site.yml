@@ -8,5 +8,4 @@
 - import_playbook: Create_Project.yml
 - import_playbook: Setup_Inventory.yml
 - import_playbook: Create_Job_Template.yml
-- import_playbook: Create_Job_Workflow_Template.yml
 - import_playbook: Create_Roles.yml
