@@ -6,7 +6,7 @@
     - name: Show user for the play with Become=True
       shell: |
         whoami
-      become: true
+      become: false 
       register: username    
 
     - name: Hello Message - Demo (Regular User.)
