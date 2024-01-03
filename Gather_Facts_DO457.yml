@@ -5,9 +5,10 @@
   tasks:
     - name: Create the facts directory if it does not exist
       ansible.builtin.file:
-        path: facts
+        path: /home/student/do457_facts
         state: directory
       run_once: true
+      delegate_to: workstation
 
     - name: Gather IOS facts
       cisco.ios.ios_facts:
@@ -24,5 +25,5 @@
     - name: Save facts to file
       ansible.builtin.copy:
         content: "{{ ansible_facts | to_nice_yaml }}"
-        dest: "facts/{{ inventory_hostname }}.txt"
+        dest: "/home/student/do457_facts/{{ inventory_hostname }}.txt"
       delegate_to: workstation
