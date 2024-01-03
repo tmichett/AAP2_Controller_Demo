@@ -1,6 +1,6 @@
 ---
 - name: Gather and display facts
-  hosts: all
+  hosts: network_devs
   become: true
   gather_facts: false
   tasks:

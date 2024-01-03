@@ -1,4 +1,3 @@
-[all]
 servera
 serverb
 serverc
@@ -16,6 +15,11 @@ servere
 [test]
 serverf
 
+[network_devs]
+iosxe1.lab.example.com
+iosxe2.lab.example.com
+junos1.lab.example.com
+junos2.lab.example.com
 
 [ios]
 iosxe1.lab.example.com
