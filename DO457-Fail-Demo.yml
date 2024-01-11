@@ -15,4 +15,6 @@
     - name: Providing Custom Failure Message for a Missing VLAN Config
       ansible.builtin.fail:
         msg: "Missing VLAN configuration"
-      when: "'No Virtual LANs configured' in vlan_result['stdout'][0]" and fail_me 
+      when: 
+        - "'No Virtual LANs configured' in vlan_result['stdout'][0]"
+        - fail_me 
