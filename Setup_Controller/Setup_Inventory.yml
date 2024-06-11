@@ -20,7 +20,7 @@
         name: "DO467 Demo Project Inventory Source"
         organization: "Red Hat Training"
         inventory: "DO467 Demo Inventory"
-        source_project: "DO467 Demo Project"
+        source_project: "DO467 Demo Hello Project"
         source: scm
         source_path: "inventory"
         update_on_launch: "no"
