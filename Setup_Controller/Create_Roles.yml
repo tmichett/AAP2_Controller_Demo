@@ -21,7 +21,8 @@
       ansible.controller.role:
         user: sivart
         role: execute
-        workflows: "DEMO - Hello Job Template"
+        job_templates: 
+          - "DEMO - Hello Job Template"
         controller_username: admin
         controller_password: redhat
         controller_host: https://controller.lab.example.com
