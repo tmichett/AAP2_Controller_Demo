@@ -9,7 +9,7 @@
         name: "DEMO - Hello Job Template"
         description: "Demo Job from Project"
         organization: Red Hat Training
-        project: DO467 Demo Project
+        project: DO467 Demo Hello Project
         inventory: DO467 Demo Inventory
         job_type: run
         playbook: "hello_world_demo.yml"
